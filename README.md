@@ -14,6 +14,6 @@
 # 목차
 
 ### SpringBoot
-[스프링부트 프로젝트 시작하기]()
+[스프링부트 프로젝트 시작하기](https://github.com/wonjun0120/TIL/blob/main/SpringBoot/01_springboot_setup.md)
 
-[스프링부트 파일 구조]()
+[스프링부트 파일 구조](https://github.com/wonjun0120/TIL/blob/main/SpringBoot/02_springboot_file_structure.md)
