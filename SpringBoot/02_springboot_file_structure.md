@@ -42,7 +42,6 @@
     - @Entity가 사용된 영역
     - VO 처럼 값 객체들도 이 영역에 해당 
         - VO : Value Object
-        - 
 
 # 참고문헌
 
