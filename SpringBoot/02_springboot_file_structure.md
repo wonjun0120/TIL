@@ -43,6 +43,21 @@
     - VO 처럼 값 객체들도 이 영역에 해당 
         - VO : Value Object
 
+## 파일 구조 예시
+```text
+src
+├─main
+│   ├─java
+│   │   └─com.example
+│   │       ├─controller    # Web Layer
+│   │       ├─dto           # Dtos
+│   │       ├─entity        # Domain Model
+│   │       ├─repository    # Repositiory Layer
+│   │       └─service       # Service Layer
+│   │       ServerApplication.java
+│   └─resources
+└─test
+```
 # 참고문헌
 
 https://developer.mozilla.org/ko/docs/Glossary/MVC
