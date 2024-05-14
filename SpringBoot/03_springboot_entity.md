@@ -73,6 +73,31 @@ public class Article {
 - JPA 지연로딩, 추후 추가 정리
 
 
+## JpaAuditing
+- 스프링에서는 데이터를 생성하거나 변경하는 경우 이를 추적하여 특정 동작을 수행할 수 있음
+- Created At Updated At Created By, Updated By 자동 갱신 가능
+- 주석 기반, 인터페이스 기반으로 나뉘어 작성 가능, 위 Entity 예시는 주석 기반
+- Auditing 기능 활성화를 위해서는 `@EnableJpaAuditing`을 사용해야하며, config 클래스에서 사용하거나, Application 클래스에서 사용하면 됨
+
+```Java
+// config 클래스 사용 예시
+
+@EnableJpaAuditing
+@Configuration()
+public class JpaConfig {}
+```
+
+```Java
+// Application 클래스 사용 예시
+@EnableJpaAuditing
+@SpringBootApplication
+public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+}
+```
+
 ## 정적 팩토리 메소드
 - GoF 디자인 패턴 중 팩토리 패턴에서 유래
 - 객체를 생성하는 역할을 분리
@@ -96,3 +121,5 @@ public class Article {
 [블로그 - JPA Entity의 기본 생성자 관련 예외 정리하기 - wbluke](https://wbluke.tistory.com/6)
 
 [블로그 - 정적 팩토리 메소드는 왜 사용할까? - ](https://tecoble.techcourse.co.kr/post/2020-05-26-static-factory-method/)
+
+[Spring - Auditing](https://docs.spring.io/spring-data/jpa/reference/auditing.html)
