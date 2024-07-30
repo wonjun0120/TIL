@@ -92,3 +92,11 @@ docker run -d --name app-mysql \
 -p 3306:3306 \
 mysql
 ```
+- 읽기 전용 볼륨 연결
+    - 볼륨 연결 설정에 `:ro`옵션을 통해 읽기전용 마운트 옵션 설정 가능
+    - 변경하면 안되는 볼륨의 경우 사용
+```shell
+docker run -d --name nginx \
+-v /opt/html:/user/share/nginx/html:ro \ 
+nginx
+```
